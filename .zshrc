@@ -12,7 +12,6 @@ alias fm='vim $(fzf --preview '\''cat {}'\'')'
 
 ZSH_THEME=robbyrussell
 
-# Which plugins would you like to load?
 source $ZSH/oh-my-zsh.sh
 
 if [[ -n $SSH_CONNECTION ]]; then
