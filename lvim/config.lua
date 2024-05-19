@@ -1,3 +1,4 @@
+
 vim.opt.scrolloff = 10
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -17,8 +18,10 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
-lvim.keys.normal_mode["<M-h>"] = "<Home>"
 lvim.keys.normal_mode["<M-l>"] = "<End>"
+lvim.keys.normal_mode["<M-h>"] = "<Home>"
+lvim.keys.visual_mode["<M-l>"] = "<End>"
+lvim.keys.visual_mode["<M-h>"] = "<Home>"
 
 vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "csharp_ls", "csharp-language-server", "c_sharp", "charp-ls" })
 lvim.lsp.automatic_configuration.skipped_servers = vim.tbl_filter(function(server)
