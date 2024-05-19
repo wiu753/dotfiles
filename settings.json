@@ -1,0 +1,99 @@
+{
+    "workbench.colorTheme": "Rosé Pine",
+    "workbench.iconTheme": "catppuccin-frappe",
+    "workbench.layoutControl.enabled": false,
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+
+    "editor.fontFamily": "Hack Nerd Font",
+    "editor.minimap.scale": 1,
+    "editor.fontLigatures": false,
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16,
+    "editor.fontWeight": "375",
+    "editor.cursorWidth": 2,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "editor.lineNumbers": "relative", 
+
+    "git.openRepositoryInParentFolders": "never",
+    "gitlens.graph.minimap.enabled": false,
+    "problems.showCurrentInStatus": true,
+    "csharp.debug.console": "externalTerminal",
+    "dotnet.codeLens.enableReferencesCodeLens": false,
+    "breadcrumbs.enabled": false,
+    "window.customTitleBarVisibility": "windowed",
+
+    "vim.highlightedyank.enable": true,
+    "vim.easymotion": true,
+    "vim.leader": " ",
+    "vim.smartRelativeLine": true,
+    "vim.showMarksInGutter": true,
+    "vim.commandLineModeKeyBindings": [{"before":[":w"]} ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "space",
+                "w"
+            ],
+            "after": [
+                "space",
+                "space",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "space",
+                "b"
+            ],
+            "after": [
+                "space",
+                "space",
+                "b"
+            ]
+        },
+        {
+            "before": [
+                "space",
+                "f"
+            ],
+            "after": [
+                "space",
+                "space",
+                "f"
+            ]
+        },
+        {
+            "before": [
+                "space",
+                "F"
+            ],
+            "after": [
+                "space",
+                "space",
+                "F"
+            ]
+        },
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "<C-d>",
+                "z",
+                "z",
+            ]
+        },
+        {
+            "before": [
+                "<C-u>"
+            ],
+            "after": [
+                "<C-u>",
+                "z",
+                "z",
+            ]
+        },
+    ],
+}
