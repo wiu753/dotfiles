@@ -1,4 +1,3 @@
-
 vim.opt.scrolloff = 10
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -17,6 +16,15 @@ vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
+vim.opt.wrap = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+
+lvim.builtin.nvimtree.setup.view.side = "right"
+lvim.builtin.indentlines.active = false
+lvim.builtin.bufferline.active = false
+
+lvim.colorscheme = "koehler"
 
 lvim.keys.normal_mode["<M-l>"] = "<End>"
 lvim.keys.normal_mode["<M-h>"] = "<Home>"
@@ -41,13 +49,13 @@ lvim.plugins = {
       vim.keymap.set("n", "<C-n>", function() harpoon:list():remove() end)
       vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
-      vim.keymap.set("n", "<C-j>", function() harpoon:list():select(1) end)
-      vim.keymap.set("n", "<C-k>", function() harpoon:list():select(2) end)
-      vim.keymap.set("n", "<C-l>", function() harpoon:list():select(3) end)
+      vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
+      vim.keymap.set("n", "<C-j>", function() harpoon:list():select(2) end)
+      vim.keymap.set("n", "<C-k>", function() harpoon:list():select(3) end)
+      vim.keymap.set("n", "<C-l>", function() harpoon:list():select(4) end)
 
-      -- Toggle previous & next buffers stored within Harpoon list
-      vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
-      vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
+      vim.keymap.set("n", "<C-M-P>", function() harpoon:list():prev() end)
+      vim.keymap.set("n", "<C-M-N>", function() harpoon:list():next() end)
     end
   },
   {
@@ -65,3 +73,5 @@ lvim.plugins = {
 }
 
 lvim.keys.normal_mode["gG"] = ":lua require('omnisharp_extended').lsp_definition()<cr>"
+lvim.keys.normal_mode["gr"] = ":lua require('omnisharp_extended').telescope_lsp_references()<cr>"
+lvim.keys.normal_mode["gi"] = ":lua require('omnisharp_extended').lsp_implementations()<cr>"
