@@ -5,8 +5,11 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 eval "$(tmuxifier init -)"
 
-DISABLE_AUTO_TITLE="true"
+# ENABLE_CORRECTION="true"
+unsetopt correct_all
+unsetopt correct
 unsetopt BEEP
+
 
 bindkey '^k' up-line-or-history
 bindkey '^j' down-line-or-history
