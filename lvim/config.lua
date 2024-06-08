@@ -73,5 +73,8 @@ lvim.plugins = {
 }
 
 lvim.keys.normal_mode["gG"] = ":lua require('omnisharp_extended').lsp_definition()<cr>"
-lvim.keys.normal_mode["gr"] = ":lua require('omnisharp_extended').telescope_lsp_references()<cr>"
-lvim.keys.normal_mode["gi"] = ":lua require('omnisharp_extended').lsp_implementations()<cr>"
+lvim.keys.normal_mode["gR"] = ":lua require('omnisharp_extended').telescope_lsp_references()<cr>"
+lvim.keys.normal_mode["gI"] = ":lua require('omnisharp_extended').lsp_implementations()<cr>"
+lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
+lvim.keys.normal_mode["<C-u>"] = "<C-u>zz"
+
