@@ -1,4 +1,4 @@
-if initialize_session "my_session"; then
+if initialize_session "work"; then
   new_window "1"
   new_window "2"
   new_window "3"
