@@ -4,6 +4,11 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:$HOME/.dotnet/tools/"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 
+# Node version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
 ZSH_THEME="robbyrussell"
 
 # Select previous commands with Vim-like keys
@@ -17,13 +22,7 @@ unsetopt BEEP
 
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
 alias vim="nvim"
+alias gl="git log --graph --oneline --decorate --all"
 
-# fnm
-FNM_PATH="/home/wiu/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/wiu/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
+source $ZSH/oh-my-zsh.sh
