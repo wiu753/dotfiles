@@ -2,6 +2,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:$HOME/.dotnet/tools/"
+export PATH="$PATH:/opt/dotMemory"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 # Node version manager
