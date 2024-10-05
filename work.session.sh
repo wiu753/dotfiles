@@ -1,11 +1,14 @@
 if initialize_session "work"; then
-  new_window "1"
-  new_window "2"
-  new_window "3"
-  new_window "4"
-  new_window "5"
-  new_window "0"
-  select_window 6
+  new_window
+  new_window
+  new_window
+  new_window
+  new_window
+  new_window
+  new_window
+  new_window
+  new_window
+  new_window
   tmux move-window -t 0
 fi
 
