@@ -30,13 +30,14 @@ My dotfiles and a minimal step by step guide to setting up my work environment.
 5. Run `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
 6. Download the [Hack Nerd Font](https://www.nerdfonts.com/font-downloads) and select it as the font face for the Ubuntu profile.
 7. Change the colorscheme to Tango Dark and remove padding within the Ubuntu Profile.
-8. Run `sudo apt-get update && sudo apt-get upgrade`.
-9. Install latest stable version of Neovim by running `curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz`.
-10. Run `sudo rm -rf /opt/nvim`.
-11. Run `sudo tar -C /opt -xzf nvim-linux64.tar.gz`. 
-12. Add `alias vim="nvim"` to `.zshrc`.
-13. Add `export PATH="$PATH:/opt/nvim-linux64/bin` to `.zshrc`.
-14. Restart terminal.
+8. Open the `settings.json` and change the background color of the Tango Dark theme to #161616.
+9. Run `sudo apt-get update && sudo apt-get upgrade`.
+10. Install latest stable version of Neovim by running `curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz`.
+11. Run `sudo rm -rf /opt/nvim`.
+12. Run `sudo tar -C /opt -xzf nvim-linux64.tar.gz`.
+13. Add `alias vim="nvim"` to `.zshrc`.
+14. Add `export PATH="$PATH:/opt/nvim-linux64/bin` to `.zshrc`.
+15. Restart terminal.
 
 ### Git
 1. Run `sudo apt install git gh`.
@@ -53,12 +54,16 @@ My dotfiles and a minimal step by step guide to setting up my work environment.
 8. Run `vim ~/.config/nvim/init.lua`
 9. Configure `init.lua` to your liking
 
-### Tmux
-1. Run `touch ~/.tmux.conf` and enter [this](./.tmux.conf).
-2. Run `source ~/.tmux.conf`.
-
 ### Tmuxifier
 1. Run `git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier`.
 2. Add `export PATH="$HOME/.tmuxifier/bin:$PATH"` to your path.
 3. Add [this](./work.session.sh) file to `~/.tmuxifier/layouts`.
 4. Run `tmuxifier load-session work` when starting to work.
+
+### Symlinking tmux, tmuxifier, and zshrc
+1. Clone [this](https://www.github.com/wiu753/dotfiles) repository.
+2. Change directory to the dotfiles repository `cd /path/to/dotfiles`.
+3. Run `ln -s $(pwd)/.tmux.conf ~/.tmux.conf`.
+3. Run `ln -s $(pwd)/.zshrc ~/.zshrc`.
+3. Run `ln -s $(pwd)/work.session.sh ~/.tmuxifier/layouts/work.session.sh`.
+
