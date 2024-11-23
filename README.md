@@ -17,7 +17,7 @@ My dotfiles and a minimal step by step guide to setting up my work environment.
 
 ## Windows
 1. Download [powertoys](https://learn.microsoft.com/en-us/windows/powertoys/install).
-2. Remap `alt + 1/2/3...` to `windows + 1/2/3...` in order to swap windows quickly.
+2. Remap `alt + 0/1/2...` to `windows + 0/1/2...` in order to swap windows quickly.
 3. Set the terminal in the first position, browser in second position, and communication channel (teams/slack/signal) in the third position within the taskbar.
 4. Pin all of the applications that you frequently use.
 5. Remove Windows fluff by unpinning and removing applications not in use.
