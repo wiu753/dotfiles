@@ -8,7 +8,7 @@ My dotfiles and a minimal step by step guide to setting up my work environment.
 - WSL2
 
 ## Browser
-1. Download Mozilla Firefox
+1. Download Mozilla Firefox.
 2. Pin devops platform in spot number one, plain tab in number two, and Spotify in number three.
 
 ## Terminal
@@ -44,15 +44,15 @@ My dotfiles and a minimal step by step guide to setting up my work environment.
 2. Run `gh auth login` and complete the login.
 
 ### Neovim
-1. Run `sudo apt update`
-2. Run `sudo apt install git gcc ripgrep unzip make`
-3. Run `mkdir ~/.config`
-4. Fork `https://github.com/nvim-lua/kickstart.nvim`
-5. Run `git clone https://github.com/[your username]/[name of your fork].git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim`
-6. Follow any other installation instruction from the `README.md`
-7. Run `vim` to start installing
-8. Run `vim ~/.config/nvim/init.lua`
-9. Configure `init.lua` to your liking
+1. Run `sudo apt update`.
+2. Run `sudo apt install git gcc ripgrep unzip make`.
+3. Run `mkdir ~/.config`.
+4. Fork `https://github.com/nvim-lua/kickstart.nvim`.
+5. Run `git clone https://github.com/[your username]/[name of your fork].git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim`.
+6. Follow any other installation instruction from the `README.md` in the forked repository.
+7. Run `vim` to start installing.
+8. Run `vim ~/.config/nvim/init.lua`.
+9. Configure `init.lua` to your liking.
 
 ### Tmuxifier
 1. Run `git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier`.
