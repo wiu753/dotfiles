@@ -36,7 +36,7 @@ My dotfiles and a minimal step by step guide to setting up my work environment.
 11. Run `sudo rm -rf /opt/nvim`.
 12. Run `sudo tar -C /opt -xzf nvim-linux64.tar.gz`.
 13. Add `alias vim="nvim"` to `.zshrc`.
-14. Add `export PATH="$PATH:/opt/nvim-linux64/bin` to `.zshrc`.
+14. Add `export PATH="$PATH:/opt/nvim-linux64/bin"` to `.zshrc`.
 15. Restart terminal.
 
 ### Git
