@@ -8,19 +8,19 @@ My dotfiles and a minimal step by step guide to setting up my work environment.
 - WSL2
 
 ## Browser
-1. Download Mozilla Firefox.
-2. Pin devops platform in spot number one, plain tab in number two, and Spotify in number three.
+1. Download Chrome.
+2. Pin tabs in the following order: Todoist, DevOps, and an AI-chat.
 
 ## Terminal
 1. Download [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install).
 2. Remove `ctrl + alt + 1/2/3...` to be able to type `@£$€{[]}`.
 
 ## Windows
-1. Download [powertoys](https://learn.microsoft.com/en-us/windows/powertoys/install).
-2. Remap `alt + 0/1/2...` to `windows + 0/1/2...` in order to swap windows quickly.
-3. Set the terminal in the first position, browser in second position, and communication channel (teams/slack/signal) in the third position within the taskbar.
-4. Pin all of the applications that you frequently use.
-5. Remove Windows fluff by unpinning and removing applications not in use.
+1. Download [autohotkeys](https://www.autohotkey.com/).
+2. Add [auto hotkey script](./alt_to_windows.ahk) in order to swap windows quickly (`alt + 0/1/2...` to `windows + 0/1/2...`).
+3. Within the taskbar set the terminal in the first position, browser in second, communication channel in third, signal in fourth, and obsidian in the fifth.
+4. Remove Windows fluff by unpinning and removing applications not in use.
+5. Pin all of the applications five applications in step 3.
 
 ## WSL2
 1. Download [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
