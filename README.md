@@ -64,6 +64,6 @@ My dotfiles and a minimal step by step guide to setting up my work environment.
 1. Clone [this](https://www.github.com/wiu753/dotfiles) repository.
 2. Change directory to the dotfiles repository `cd /path/to/dotfiles`.
 3. Run `ln -s $(pwd)/.tmux.conf ~/.tmux.conf`.
-3. Run `ln -s $(pwd)/.zshrc ~/.zshrc`.
-3. Run `ln -s $(pwd)/work.session.sh ~/.tmuxifier/layouts/work.session.sh`.
+4. Run `ln -s $(pwd)/.zshrc ~/.zshrc`.
+5. Run `ln -s $(pwd)/work.session.sh ~/.tmuxifier/layouts/work.session.sh`.
 
