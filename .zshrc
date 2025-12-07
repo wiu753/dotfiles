@@ -5,6 +5,7 @@ export PATH="$PATH:$HOME/.dotnet/tools/"
 export PATH="$PATH:/opt/dotMemory"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
 
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
