@@ -26,10 +26,7 @@ unsetopt BEEP
 plugins=(git)
 
 alias vim="nvim"
-# Show git log's with increasing levels of information
-alias lg="git log --all --decorate --oneline --graph"
-alias lg1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
-alias lg2='git log --graph --abbrev-commit --decorate --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)"'
+alias lg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
 alias dps='docker ps --format "{{.Status}}\t{{.Names}}\t{{.ID}}" | awk -F"\t" '\''BEGIN{printf "%-25s %-25s %-15s\n","STATUS","NAMES","ID"}{printf "\033[1;32m%-25s\033[0m \033[1;34m%-25s\033[0m \033[1;33m%-15s\033[0m\n",$1,$2,$3}'\'''
 
 source $ZSH/oh-my-zsh.sh
