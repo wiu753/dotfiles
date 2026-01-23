@@ -13,7 +13,7 @@ My dotfiles and a minimal step by step guide to setting up my work environment.
 1. Download [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install).
 2. Download and enable DaddyTimeMono Nerd Font.
 3. Set colorscheme to Tango Dark.
-4. Update the keybindings section in settings.json to [this](./keybindings.json).
+4. Update the keybindings section in settings.json to [this](https://github.com/wiu753/dotfiles/blob/main/keybingings.json).
 
 ## Windows
 
